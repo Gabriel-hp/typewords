@@ -44,6 +44,11 @@
         <section class="custom-levels-list">
             <h2>Níveis Criados</h2>
             <hr>
+
+            @if (count($custom_game_stts) === 0)
+            <p>Você não possui nenhum nível criado</p>
+            @endif
+
             <ul>
                 @foreach ($custom_game_stts as $setting)
                     <li>
