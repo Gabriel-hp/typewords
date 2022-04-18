@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body
+{
+    background-color: #666;
+}
+
+button, a
+{
+    cursor: pointer;
+}
+
+header a
+{
+    color: #eee;
+    text-decoration: none;
+}
+
+header a:hover
+{
+    color: #fff;
+}
+
+.show
+{
+    display: block;
+}
+
+.hide
+{
+    display: none;
+}
+
+.no-selectable
+{
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;            /* Possível implementação no futuro */
+}
+
+input::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+
+.write::after
+{
+    content: '|';
+    margin-left: -5px;
+    /* animation: 1s blink .5s infinite cubic-bezier(0.075, 0.820, 0.165, 1.000); */
+    animation: var(--animation-blink);
+}
+
+@keyframes blink {
+    0%, 100% {
+       opacity: 1;
+    }
+    
+    50% {
+        opacity: 0;
+    }
+}

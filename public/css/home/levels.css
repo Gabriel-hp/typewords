@@ -1,0 +1,117 @@
+.default-levels-list, .custom-levels-list
+{
+    color: #fff;
+    width: 60%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.default-levels-list ul li, .custom-levels-list ul
+{
+    list-style: none;
+    padding: 0px;
+}
+
+.default-levels-list li, .custom-levels-list li
+{
+    display: flex;
+    position: relative;
+}
+
+.default-levels-list h2, .custom-levels-list h2
+{
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.default-levels-list hr, .custom-levels-list hr
+{
+    box-shadow: 7px 5px 5px #444;
+    margin-bottom: 12px;
+}
+
+.level-button
+{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #333;
+    margin: 10px 0px;
+    transition: 0.5s;
+    padding: 10px;
+    width: 100%;
+}
+
+.level-button:hover
+{
+    color: #fff;
+    letter-spacing: 1px;
+    transform: translateY(-3px);
+    box-shadow: 5px 7px 5px #555;
+    transition: .2s;
+}
+
+.custom
+{
+    color: #666;
+    background-color: #eee;
+}
+
+.custom:hover
+{
+    color: #eee;
+    border: 3px solid #eee;
+    text-shadow:#aaa 1px 1px 5px;
+}
+
+.default-levels-list ul li:nth-child(1) a
+{
+    background-color:rgba(52, 189, 253, 0.904);
+    border: 3px solid rgba(75, 188, 240, 0.876);
+}
+.default-levels-list ul li:nth-child(1) a:hover{
+    color: rgba(52, 189, 253, 0.904);
+    text-shadow:rgba(41, 163, 219, 0.767) 1px 1px 5px;
+    background-color: transparent;
+}
+
+.default-levels-list ul li:nth-child(2) a
+{
+    background-color: rgb(58, 223, 121, 0.904);
+    border: 3px solid rgb(52, 192, 34);
+}
+.default-levels-list ul li:nth-child(2) a:hover
+{
+    color: rgb(58, 223, 121, 0.904);
+    text-shadow: rgba(104, 233, 153, 0.705) 1px 1px 5px;
+    background-color: transparent;
+}
+
+.default-levels-list ul li:nth-child(3) a
+{
+    background-color: rgb(255, 224, 47, 0.904);
+    border: 3px solid rgb(214, 200, 3);
+}
+.default-levels-list ul li:nth-child(3) a:hover
+{
+    color:  rgb(255, 224, 47, 0.904);
+    text-shadow:rgba(238, 218, 103, 0.726) 1px 1px 5px;
+    background-color: transparent;
+}
+
+.default-levels-list ul li:nth-child(4) a
+{
+    background-color: rgb(255, 130, 80, 0.904);
+    border: 3px solid rgb(228, 122, 35);
+}
+.default-levels-list ul li:nth-child(4) a:hover
+{
+    color:  rgb(255, 130, 80, 0.904);
+    text-shadow: rgba(228, 136, 100, 0.726) 1px 1px 5px;
+    background-color: transparent;
+}

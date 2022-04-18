@@ -1,0 +1,27 @@
+.card 
+{
+    width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 0px;
+}
+
+.card-body
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-body table
+{
+    width: 70%;
+}
+
+.card-body p, .card-body table, .card-body .btn
+{
+    margin-top: 10px;
+}

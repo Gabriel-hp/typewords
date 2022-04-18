@@ -1,0 +1,82 @@
+:root
+{
+    --header-height: 70px
+}
+
+header
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: var(--header-height);
+    width: 100%;
+}
+
+header table
+{
+    text-align: center;
+    background-color: #fff;
+}
+
+main
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - var(--header-height));
+}
+
+main section
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+}
+
+main section .word-display-container
+{
+    border-radius: 10px;
+    border: 2px solid #fff;
+}
+
+main section .word-display-container
+{
+    font-size: 2.4rem;
+}
+
+main section #word-input
+{
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #aaa;
+}
+
+main section p
+{
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+main .btn-danger
+{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-color: rgb(255, 130, 80, 0.904);
+    border: none;
+}
+
+main .btn-danger:hover
+{
+    background-color: rgb(255, 130, 80, 0.904);
+}
+

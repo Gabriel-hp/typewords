@@ -1,0 +1,30 @@
+main
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card
+{
+    margin-top: 20px;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    padding: 10px;
+}
+
+form button[type="submit"]
+{
+    width: 50%;
+    margin: auto;
+}
+
+footer
+{
+    margin-top: 50px;
+}

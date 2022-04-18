@@ -1,0 +1,36 @@
+:root
+{
+    --header-height: 100px;
+    --animation-blink: initial;
+}
+
+header
+{
+    display: flex;
+    align-items: center;
+    height: var(--header-height);
+    padding: 0px 40px;
+    font-size: 1.2rem;
+    width: 100%;
+    color: #fff;
+}
+
+header nav
+{
+    width: 100%;
+}
+
+header nav ul
+{
+    list-style: none;
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul li .home-title
+{
+    width: 220px;
+}
