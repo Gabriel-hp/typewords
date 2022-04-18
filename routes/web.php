@@ -38,6 +38,11 @@ Route::post('/gamemode', function(Request $request) {
     return redirect('/');
 });
 
+Route::post('/gamemode/delete/{game_setting_id}', function($game_setting_id) {
+    GameSettings::destroy($game_setting_id);
+    return redirect('/');
+});
+
 Route::get('/starter/{setting_type}/{setting_id}', function ($setting_type, $setting_id) {
     $game_setting = [];
 

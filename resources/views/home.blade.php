@@ -46,7 +46,15 @@
             <hr>
             <ul>
                 @foreach ($custom_game_stts as $setting)
-                    <li><a class="level-button custom" href="{{ url('/starter/custom/' . $setting->id) }}">{{ $setting->name }}</a></li>
+                    <li>
+                        <a class="level-button custom" href="{{ url('/starter/custom/' . $setting->id) }}">{{ $setting->name }}</a>
+                        <form method="POST" action="{{ url("/gamemode/delete/$setting->id") }}">
+                            @csrf
+                            <button type="submit">
+                                <img class="level-trash-icon" src="/assets/trash.svg" alt="trash">
+                            </button>
+                        </form>
+                    </li>
                 @endforeach
             </ul>
         </section>

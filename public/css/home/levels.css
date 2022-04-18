@@ -116,3 +116,21 @@
     text-shadow: rgba(228, 136, 100, 0.726) 1px 1px 5px;
     background-color: transparent;
 }
+
+.level-trash-icon
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100%;
+    margin-left: 20px;
+    width: 22px;
+    cursor: pointer;
+    transition: .2s;
+    filter: invert(60%);
+}
+
+.level-trash-icon:hover
+{
+    filter: invert(80%);
+}
