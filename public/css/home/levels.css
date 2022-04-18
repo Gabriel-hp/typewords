@@ -6,7 +6,7 @@
     margin-top: 10px;
 }
 
-.default-levels-list ul li, .custom-levels-list ul
+.default-levels-list ul, .custom-levels-list ul
 {
     list-style: none;
     padding: 0px;
@@ -60,13 +60,14 @@
 {
     color: #666;
     background-color: #eee;
+    border: #eee 3px solid;
 }
 
 .custom:hover
 {
     color: #eee;
-    border: 3px solid #eee;
     text-shadow:#aaa 1px 1px 5px;
+    background-color: transparent;
 }
 
 .default-levels-list ul li:nth-child(1) a

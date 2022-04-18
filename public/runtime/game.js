@@ -46,6 +46,7 @@ class Game {
     async startNewTurn() {
         this.reset()
         this.currentWord = await getWord(this.settings.gameMode, this.settings.maxWordsLength)
+        console.log(this.currentWord)
         wordDisplay.textContent = this.currentWord
         document.querySelector('#word-length').textContent = this.currentWord.length
         timer.start(this.settings.seconds, this.settings.miliSeconds)

@@ -33,15 +33,16 @@
     <main class="container">
         <div class="card">
             <div class="card-body">
-                <form method="POST" action="create.php">
+                <form method="POST" action="/gamemode">
+                    @csrf
                     <div class="mb-3">
                         <label class="form-label">Nome do nível</label>
-                        <input class="form-control" name="lvl-name" type="text" autocomplete="off" id="level_name_input" placeholder="Nome" required>
+                        <input class="form-control" name="name" type="text" autocomplete="off" id="level_name_input" placeholder="Nome" required>
                     </div>
 
                     <div class="mb-3">
                         <label class="form-label">Modo de jogo</label>
-                        <select class="form-select" name="lvl-game-mode">
+                        <select class="form-select" name="gm">
                             <option value="RandomWords">RandomWords</option>
                             <option value="RandomLetters">RandomLetters</option>
                         </select>
@@ -49,13 +50,13 @@
 
                     <div class="input-group mb-3">
                         <span class="input-group-text">Tempo</span>
-                        <input class="form-control" name="lvl-seconds" type="number" class="time-input" id="seconds-input" placeholder="segundos" required>
-                        <input class="form-control" name="lvl-miliseconds" type="number" id="time-input" id="milise-onds_input" placeholder="milisegundos" required>
+                        <input class="form-control" name="sec" type="number" class="time-input" id="seconds-input" placeholder="segundos" required>
+                        <input class="form-control" name="msec" type="number" id="time-input" id="milise-onds_input" placeholder="milisegundos" required>
                     </div>
 
                     <div class="mb-3">
                         <label class="form-label">Máximo de caracteres</label>
-                        <input class="form-control" name="lvl-max-words-len" type="number" placeholder="nº de caracteres">
+                        <input class="form-control" name="mwl" type="number" placeholder="nº de caracteres">
                     </div>
 
                     <button type="submit" class="btn btn-secondary" id="btn_create">Criar</button>
