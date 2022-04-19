@@ -13,7 +13,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 800px;
+    width: 700px;
 }
 
 #game-over-container .card .card-body
@@ -24,15 +24,11 @@
     flex-direction: column;
 }
 
-#game-over-container .card table
-{
-    width: 70%;
-}
-
 #game-over-container .card h1
 {
     text-align: center;
     font-size: 4rem;
+    margin: 0px;
 }
 
 #game-over-container .card #game-over-msg
