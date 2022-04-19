@@ -72,7 +72,7 @@
             <input type="text" autocomplete="off" spellcheck="false" id="word-input">
             <p class="space-message">Pressione enter quando terminar de digitar.</p>
         </section>
-        <a class="btn btn-danger" href="{{ URL::previous() }}">Sair</a>
+        <a class="btn btn-danger" href="{{ url('/') }}">Sair</a>
     </main>
     <script type="module" src="/runtime/init.js"></script>
 </body>

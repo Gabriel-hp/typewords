@@ -1,3 +1,10 @@
+<?php
+function addZero(int $n)
+{
+    return (int) $n < 10 ? "0$n" : "$n";
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -26,7 +33,7 @@
                     </tr>
                     <tr>
                         <td>Tempo por turno</td>
-                        <td>{{ $game_setting->seconds }}:{{ $game_setting->miliseconds }}</td>
+                        <td>{{ addZero($game_setting->seconds) }}:{{ addZero($game_setting->miliseconds) }}</td>
                     </tr>
                     <tr>
                         <td>Máximo de caracteres</td>
@@ -34,7 +41,6 @@
                     </tr>
                 </table>
                 <div class="controls">
-                    <a class="btn btn-secondary" href="{{ url('/') }}">Voltar para o dashboard</a>
                     <a class="btn btn-secondary"
                         href="{{ url('/game?') .
                             http_build_query([
@@ -43,7 +49,9 @@
                                 'sec' => $game_setting->seconds,
                                 'msec' => $game_setting->miliseconds,
                                 'mwl' => $game_setting->max_words_len,
-                            ]) }}">Jogar</a>
+                            ]) }}">Começar
+                        o jogo</a>
+                    <a class="btn btn-secondary" href="{{ url('/') }}">Voltar para o dashboard</a>
                 </div>
             </div>
         </div>

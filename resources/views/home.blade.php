@@ -64,7 +64,7 @@
             </ul>
         </section>
         <footer>
-            <p>Created by &copy;<a href="https://github.com/pultzlucas" target="_blank">pultzlucas</a></p>
+            <p>&copy; Created by <a href="https://github.com/pultzlucas" target="_blank">pultzlucas</a></p>
         </footer>
     </main>
     <script src="/js/write-animation.js"></script>
