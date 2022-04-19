@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Game Mode</title>
+    <title>TypeWords | Criar game level</title>
     <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -19,9 +19,7 @@
         <nav>
             <ul>
                 <li>
-                    <h1>
-                        <a href="{{ url('/') }}"><-</a>
-                    </h1>
+                    <a href="{{ url('/') }}">Voltar para o dashboard</a>
                 </li>
                 <li>
                     <div class="home-title">
@@ -54,7 +52,7 @@
                         <span class="input-group-text">Tempo</span>
                         <input class="form-control" name="sec" type="number" class="time-input" id="seconds-input"
                             placeholder="segundos" required>
-                        <input class="form-control" name="msec" type="number" id="time-input" id="milise-onds_input"
+                        <input class="form-control" name="msec" type="number" max="59" id="time-input" id="milise-onds_input"
                             placeholder="milisegundos" required>
                     </div>
 
