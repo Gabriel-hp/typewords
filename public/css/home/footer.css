@@ -30,4 +30,10 @@ footer a:hover
 #github-mark
 {
     filter: invert(60%);
+    transition: .2s;
+}
+
+#github-mark:hover
+{
+    filter: invert(70%);
 }
