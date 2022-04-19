@@ -13,14 +13,17 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('default_game_settings', function (Blueprint $table) {
+        Schema::create('game_settings', function (Blueprint $table) {
             $table->id();
             $table->string('name', 50);
             $table->enum('game_mode', ['randomwords', 'randomletters']);
             $table->unsignedInteger('seconds');
             $table->unsignedInteger('miliseconds');
             $table->unsignedInteger('max_words_len');
+            $table->timestamps();
         });
+
+        Schema::rename('game_settings', 'game_levels');
     }
 
     /**
@@ -30,6 +33,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('default_game_settings');
+        Schema::dropIfExists('game_levels');
     }
 };

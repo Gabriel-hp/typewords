@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        DB::insert("INSERT INTO `default_game_settings` (`name`, `game_mode`, `seconds`, `miliseconds`, `max_words_len`) VALUES
+        DB::insert("INSERT INTO `default_game_levels` (`name`, `game_mode`, `seconds`, `miliseconds`, `max_words_len`) VALUES
         ('fácil', 'randomwords', 5, 0, 5),
         ('médio', 'randomwords', 4, 0, 10),
         ('difícil', 'randomwords', 4, 0, 20),

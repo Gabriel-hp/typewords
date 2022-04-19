@@ -1,13 +1,13 @@
 <?php
 
-use App\Models\DefaultGameSettings;
-use App\Models\GameSettings;
+use App\Models\DefaultGameLevels;
+use App\Models\GameLevels;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    $default_game_stts = DefaultGameSettings::all();
-    $custom_game_stts = GameSettings::all();
+    $default_game_stts = DefaultGameLevels::all();
+    $custom_game_stts = GameLevels::all();
     return view('home', [
         'default_game_stts' => $default_game_stts,
         'custom_game_stts' => $custom_game_stts
@@ -27,7 +27,7 @@ Route::post('/gamemode', function(Request $request) {
         'mwl' => 'required'
     ]);
 
-    GameSettings::create([
+    GameLevels::create([
         'name' =>  $request->name,
         'game_mode' =>  $request->gm,
         'seconds' =>  $request->sec,
@@ -39,7 +39,7 @@ Route::post('/gamemode', function(Request $request) {
 });
 
 Route::post('/gamemode/delete/{game_setting_id}', function($game_setting_id) {
-    GameSettings::destroy($game_setting_id);
+    GameLevels::destroy($game_setting_id);
     return redirect('/');
 });
 
@@ -47,11 +47,11 @@ Route::get('/starter/{setting_type}/{setting_id}', function ($setting_type, $set
     $game_setting = [];
 
     if($setting_type === 'default') {
-        $game_setting = DefaultGameSettings::findOrFail($setting_id);
+        $game_setting = DefaultGameLevels::findOrFail($setting_id);
     }
     
     if($setting_type === 'custom') {
-        $game_setting = GameSettings::findOrFail($setting_id);
+        $game_setting = GameLevels::findOrFail($setting_id);
     }
 
     return view('starter', [
