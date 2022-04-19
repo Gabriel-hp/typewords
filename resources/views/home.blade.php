@@ -36,7 +36,8 @@
             <hr>
             <ul>
                 @foreach ($default_game_stts as $setting)
-                    <li><a class="level-button" href="{{ url('/starter/default/' . $setting->id) }}">{{ $setting->name }}</a></li>
+                    <li><a class="level-button"
+                            href="{{ url('/starter/default/' . $setting->id) }}">{{ $setting->name }}</a></li>
                 @endforeach
             </ul>
         </section>
@@ -46,13 +47,14 @@
             <hr>
 
             @if (count($custom_game_stts) === 0)
-            <p>Você não possui nenhum nível criado</p>
+                <p>Você não possui nenhum nível criado</p>
             @endif
 
             <ul>
                 @foreach ($custom_game_stts as $setting)
                     <li>
-                        <a class="level-button custom" href="{{ url('/starter/custom/' . $setting->id) }}">{{ $setting->name }}</a>
+                        <a class="level-button custom"
+                            href="{{ url('/starter/custom/' . $setting->id) }}">{{ $setting->name }}</a>
                         <form method="POST" action="{{ url("/gamemode/delete/$setting->id") }}">
                             @csrf
                             <button type="submit">
@@ -64,7 +66,16 @@
             </ul>
         </section>
         <footer>
-            <p>&copy; Created by <a href="https://github.com/pultzlucas" target="_blank">pultzlucas</a></p>
+            <ul>
+                <li>
+                    &copy; Created by <a href="https://github.com/pultzlucas" target="_blank">pultzlucas</a>
+                </li>
+                <li>
+                    <a href="https://github.com/pultzlucas/typewords" target="_blank">
+                        <img id="github-mark" src="/assets/github-mark.png" alt="Github mark">
+                    </a>
+                </li>
+            </ul>
         </footer>
     </main>
     <script src="/js/write-animation.js"></script>

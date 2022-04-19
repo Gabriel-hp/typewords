@@ -1,23 +1,33 @@
 footer
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 60px;
+    width: 100%;
+    color: #aaa;
 }
 
-footer p, footer a
+footer ul
 {
-    color: #aaa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0px;
+    width: 100%;
 }
 
 footer a
 {
     text-decoration: none;
+    color: #aaa;
 }
 
 footer a:hover
 {
     text-decoration: underline;
     color: #bbb;
+}
+
+#github-mark
+{
+    filter: invert(60%);
 }
