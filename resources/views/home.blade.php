@@ -71,6 +71,9 @@
                     &copy; Created by <a href="https://github.com/pultzlucas" target="_blank">pultzlucas</a>
                 </li>
                 <li>
+                    v{{ config('app.version') }}
+                </li>
+                <li>
                     <a href="https://github.com/pultzlucas/typewords" target="_blank">
                         <img id="github-mark" src="/assets/github-mark.png" alt="Github mark">
                     </a>
