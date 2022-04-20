@@ -1,0 +1,20 @@
+.loader {
+    /* Light grey */
+    border: 6px solid transparent;
+    /* Blue */
+    border-top: 6px solid #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin .4s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    100% {
+        transform: rotate(360deg);
+    }
+}

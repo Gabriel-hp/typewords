@@ -11,6 +11,7 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/home/main.css">
+    <link rel="stylesheet" href="/css/animations/spin.css">
 </head>
 
 <body>
@@ -28,9 +29,8 @@
             </ul>
         </nav>
     </header>
-    <main class="container">
-        <span class="total-words"></span>
 
+    <main class="container">
         <section class="default-levels-list">
             <h2>Níveis</h2>
             <hr>

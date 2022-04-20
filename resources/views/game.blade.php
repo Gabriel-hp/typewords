@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/game/game.css">
     <link rel="stylesheet" href="/css/game/game-over.css">
+    <link rel="stylesheet" href="/css/animations/spin.css">
 </head>
 
 <body>

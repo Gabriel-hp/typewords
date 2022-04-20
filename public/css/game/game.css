@@ -41,11 +41,10 @@ main section .word-display-container
 {
     border-radius: 10px;
     border: 2px solid #fff;
-}
-
-main section .word-display-container
-{
     font-size: 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main section #word-input

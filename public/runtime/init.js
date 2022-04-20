@@ -15,7 +15,7 @@ game.start().then(() => {
     document.addEventListener('keypress', async e => {
         if (e.key === 'Enter' && !game.isOver) {
             wordInput.value === wordDisplay.textContent
-                ? await game.nextTurn()
+                ? game.nextTurn()
                 : game.gameOver()
         }
     })

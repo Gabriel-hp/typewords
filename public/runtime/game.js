@@ -1,6 +1,7 @@
 import Timer from './timer.js'
 import { getWord } from './words.js'
 import { showGameOver } from './game-over.js'
+import * as Loader from './loader.js'
 
 const timeDisplay = document.querySelector('#time-display')
 const timer = new Timer(timeDisplay)
@@ -45,11 +46,16 @@ class Game {
 
     async startNewTurn() {
         this.reset()
-        this.currentWord = await getWord(this.settings.gameMode, this.settings.maxWordsLength)
-        console.log(this.currentWord)
-        wordDisplay.textContent = this.currentWord
-        document.querySelector('#word-length').textContent = this.currentWord.length
-        timer.start(this.settings.seconds, this.settings.miliSeconds)
+        Loader.show()
+
+        getWord(this.settings.gameMode, this.settings.maxWordsLength).then(word => {
+            Loader.hide()
+            // this.currentWord = await getWord(this.settings.gameMode, this.settings.maxWordsLength)
+            this.currentWord = word
+            wordDisplay.textContent = this.currentWord
+            document.querySelector('#word-length').textContent = this.currentWord.length
+            timer.start(this.settings.seconds, this.settings.miliSeconds)
+        })
     }
 
     updatePoints(value) {
