@@ -79,8 +79,8 @@
 
 .default-levels-list ul li:nth-child(1) a
 {
-    background-color:rgba(52, 189, 253, 0.904);
-    border: 3px solid rgba(75, 188, 240, 0.876);
+    background-color:rgba(52, 189, 253, 0.9);
+    border: 3px solid rgba(75, 188, 240);
 }
 .default-levels-list ul li:nth-child(1) a:hover{
     color: rgba(52, 189, 253, 0.904);
@@ -90,36 +90,36 @@
 
 .default-levels-list ul li:nth-child(2) a
 {
-    background-color: rgb(58, 223, 121, 0.904);
-    border: 3px solid rgb(52, 192, 34);
+    background-color: rgba(58, 223, 121, 0.904);
+    border: 3px solid rgba(52, 192, 34);
 }
 .default-levels-list ul li:nth-child(2) a:hover
 {
-    color: rgb(58, 223, 121, 0.904);
+    color: rgba(58, 223, 121, 0.904);
     text-shadow: rgba(104, 233, 153, 0.705) 1px 1px 5px;
     background-color: transparent;
 }
 
 .default-levels-list ul li:nth-child(3) a
 {
-    background-color: rgb(255, 224, 47, 0.904);
-    border: 3px solid rgb(214, 200, 3);
+    background-color: rgba(255, 224, 47, 0.904);
+    border: 3px solid rgba(214, 200, 3);
 }
 .default-levels-list ul li:nth-child(3) a:hover
 {
-    color:  rgb(255, 224, 47, 0.904);
+    color:  rgba(255, 224, 47, 0.904);
     text-shadow:rgba(238, 218, 103, 0.726) 1px 1px 5px;
     background-color: transparent;
 }
 
 .default-levels-list ul li:nth-child(4) a
 {
-    background-color: rgb(255, 130, 80, 0.904);
-    border: 3px solid rgb(228, 122, 35);
+    background-color: rgba(255, 130, 80, 0.904);
+    border: 3px solid rgba(228, 122, 35);
 }
 .default-levels-list ul li:nth-child(4) a:hover
 {
-    color:  rgb(255, 130, 80, 0.904);
+    color:  rgba(255, 130, 80, 0.904);
     text-shadow: rgba(228, 136, 100, 0.726) 1px 1px 5px;
     background-color: transparent;
 }

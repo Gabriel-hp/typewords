@@ -19,7 +19,7 @@
         <nav>
             <ul>
                 <li>
-                    <a href="{{ url('/gamemode') }}">Criar um nível de jogo</a>
+                    <a href="{{ url('/gamelevels') }}">Criar um nível de jogo</a>
                 </li>
                 <li>
                     <div class="home-title">
@@ -55,7 +55,7 @@
                     <li>
                         <a class="level-button custom"
                             href="{{ url('/starter/custom/' . $setting->id) }}">{{ $setting->name }}</a>
-                        <form method="POST" action="{{ url("/gamemode/delete/$setting->id") }}">
+                        <form method="POST" action="{{ url("/gamelevels/delete/$setting->id") }}">
                             @csrf
                             <button type="submit">
                                 <img class="level-trash-icon" src="/assets/trash.svg" alt="trash">
@@ -65,22 +65,22 @@
                 @endforeach
             </ul>
         </section>
-        <footer>
-            <ul>
-                <li>
-                    &copy; Created by <a href="https://github.com/pultzlucas" target="_blank">pultzlucas</a>
-                </li>
-                <li>
-                    v{{ config('app.version') }}
-                </li>
-                <li>
-                    <a href="https://github.com/pultzlucas/typewords" target="_blank">
-                        <img id="github-mark" src="/assets/github-mark.png" alt="Github mark">
-                    </a>
-                </li>
-            </ul>
-        </footer>
     </main>
+    <footer>
+        <ul>
+            <li>
+                &copy; Created by <a href="https://github.com/pultzlucas" target="_blank">pultzlucas</a>
+            </li>
+            <li>
+                v{{ config('app.version') }}
+            </li>
+            <li>
+                <a href="https://github.com/pultzlucas/typewords" target="_blank">
+                    <img id="github-mark" src="/assets/github-mark.png" alt="Github mark">
+                </a>
+            </li>
+        </ul>
+    </footer>
     <script src="/js/write-animation.js"></script>
 </body>
 

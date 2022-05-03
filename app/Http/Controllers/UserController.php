@@ -5,10 +5,17 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
 {
+    function signup_view() {
+        return view('signup');
+    }
+
+    function login_view() {
+        return view('login');
+    }
+
     function signup(Request $request) {
         $request->validate([
             'username' => 'required',
@@ -24,7 +31,7 @@ class UserController extends Controller
             'birth_date' => $request->birth_date,
         ]);
         
-        return redirect('/');
+        return redirect('/dashboard');
     }
 
     function login(Request $request) {
@@ -36,7 +43,10 @@ class UserController extends Controller
         $user = User::where('username', '=', $request->username)->first();
         
         if(!$user) {
-            return 'User not found';
+            $user = User::where('email', '=', $request->username)->first();
+            if(!$user) {
+                return 'User not found';
+            }
         }
 
         if($user->password !== $request->password) {
@@ -46,6 +56,6 @@ class UserController extends Controller
         $user->last_login = Carbon::now();
         $user->save();
 
-        return redirect('/');
+        return redirect('/dashboard');
     }
 }
