@@ -45,6 +45,7 @@ main section .word-display-container
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100px;
 }
 
 main section #word-input

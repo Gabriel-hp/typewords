@@ -50,7 +50,6 @@ class Game {
 
         getWord(this.settings.gameMode, this.settings.maxWordsLength).then(word => {
             Loader.hide()
-            // this.currentWord = await getWord(this.settings.gameMode, this.settings.maxWordsLength)
             this.currentWord = word
             wordDisplay.textContent = this.currentWord
             document.querySelector('#word-length').textContent = this.currentWord.length

@@ -1,14 +1,30 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use App\Models\DefaultGameLevels;
 use App\Models\GameLevels;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
+    return view('main');
+});
+
+Route::get('/login', function () {
+    return view('login');
+});
+
+Route::post('/login', [UserController::class, 'login']);
+
+Route::get('/signup', function () {
+    return view('signup');
+});
+Route::post('/signup', [UserController::class, 'signup']);
+
+Route::get('/dashboard', function() {
     $default_game_stts = DefaultGameLevels::all();
     $custom_game_stts = GameLevels::all();
-    return view('home', [
+    return view('dashboard', [
         'default_game_stts' => $default_game_stts,
         'custom_game_stts' => $custom_game_stts
     ]);
