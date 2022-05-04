@@ -51,7 +51,7 @@ function addZero(int $n)
                                 'mwl' => $game_setting->max_words_len,
                             ]) }}">Começar
                         o jogo</a>
-                    <a class="btn btn-secondary" href="{{ url('/') }}">Voltar para o dashboard</a>
+                    <a class="btn btn-secondary" href="{{ url('/dashboard') }}">Voltar para o dashboard</a>
                 </div>
             </div>
         </div>

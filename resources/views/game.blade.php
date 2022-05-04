@@ -40,7 +40,7 @@
 
                 <div class="controls">
                     <a href="{{ Request::url() }}" class="btn btn-secondary">Novo Jogo</a>
-                    <a class="btn btn-secondary" href="{{ url('/') }}">Voltar para o Dashboard</a>
+                    <a class="btn btn-secondary" href="{{ url('/dashboard') }}">Voltar para o Dashboard</a>
                 </div>
             </div>
         </div>
@@ -73,7 +73,7 @@
             <input type="text" autocomplete="off" spellcheck="false" id="word-input">
             <p class="space-message">Pressione enter quando terminar de digitar.</p>
         </section>
-        <a class="btn btn-danger" href="{{ url('/') }}">Sair</a>
+        <a class="btn btn-danger" href="{{ url('/dashboard') }}">Sair</a>
     </main>
     <script type="module" src="/runtime/init.js"></script>
 </body>
