@@ -20,22 +20,27 @@
                     @csrf
                     <div class="mb-3">
                         <label class="form-label">Nome de usuário</label>
-                        <input class="form-control" name="username" type="text" autocomplete="off" id="level_name_input"
+                        <input class="form-control" name="username" type="text" autocomplete="off"
                             placeholder="Nome" required>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Email</label>
-                        <input class="form-control" name="email" type="email" autocomplete="off" id="level_name_input"
+                        <input class="form-control" name="email" type="email" autocomplete="off"
                             placeholder="Email" required>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Senha de acesso</label>
-                        <input class="form-control" name="password" type="password" autocomplete="off" id="level_name_input"
+                        <input class="form-control" name="password" type="password" autocomplete="off"
+                            placeholder="Senha" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Confirme a senha</label>
+                        <input class="form-control" name="password_confirm" type="password" autocomplete="off"
                             placeholder="Senha" required>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Data de nascimento</label>
-                        <input class="form-control" name="birth_date" type="date" autocomplete="off" id="level_name_input"
+                        <input class="form-control" name="birth_date" type="date" autocomplete="off"
                             placeholder="Senha" required>
                     </div>
 

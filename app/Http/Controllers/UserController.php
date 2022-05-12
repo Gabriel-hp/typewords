@@ -21,8 +21,13 @@ class UserController extends Controller
             'username' => 'required',
             'email' => 'required',
             'password' => 'required',
-            'birth_date' => 'required'
+            'birth_date' => 'required',
+            'password_confirm' => 'required'
         ]);
+
+        if($request->password_confirm !== $request->password) {
+            return 'As duas senhas precisam ser iguais.';
+        }
 
         User::create([
             'username' => $request->username,
